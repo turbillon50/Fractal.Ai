@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V Momentum Knowledge Hub</title>
+    <meta
+      name="description"
+      content="V Momentum: integration library, knowledge base, visual system and roadmap hub."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav container">
+        <div class="brand">
+          <span class="brand-name">V Momentum</span>
+          <span class="brand-subtitle">SaaS Technology Apps Design</span>
+        </div>
+        <a class="nav-cta" href="#roadmap">Roadmap</a>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="eyebrow">No es magia. Es sistema.</p>
+        <h1>V Momentum</h1>
+        <p class="subtitle">SaaS Technology Apps Design</p>
+        <p class="hero-copy">
+          Construimos sistemas digitales con estrategia, IA, código, infraestructura y
+          conocimiento.
+        </p>
+        <div class="hero-actions">
+          <a href="#integraciones" class="btn btn-primary">Ver integraciones</a>
+          <a href="#knowledge" class="btn btn-secondary">Explorar conocimiento</a>
+          <a href="#roadmap" class="btn btn-secondary">Ver roadmap</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container">
+        <h2>Quiénes somos</h2>
+        <p>
+          V Momentum es la capa tecnológica de All Global Holding enfocada en diseñar y
+          estructurar aplicaciones digitales modernas.
+        </p>
+        <p>No construimos pantallas. Construimos sistemas.</p>
+      </section>
+
+      <section class="section container">
+        <h2>Cómo nacemos</h2>
+        <p>
+          V Momentum nace de la necesidad de convertir ideas en productos reales sin perder meses
+          en teoría.
+        </p>
+        <p>Cada herramienta tiene una función. Cada integración tiene un propósito.</p>
+      </section>
+
+      <section class="section container glass">
+        <h2>Manifiesto</h2>
+        <blockquote id="manifestoText"></blockquote>
+      </section>
+
+      <section class="section container" id="system-map">
+        <h2>System Map</h2>
+        <div class="flow" id="systemFlow"></div>
+      </section>
+
+      <section class="section container" id="integraciones">
+        <div class="section-head">
+          <h2>Integraciones</h2>
+          <div class="controls">
+            <input id="searchInput" type="search" placeholder="Buscar integración o tema..." />
+            <select id="categoryFilter">
+              <option value="all">Todas las categorías</option>
+            </select>
+          </div>
+        </div>
+        <div class="cards" id="integrationCards"></div>
+      </section>
+
+      <section class="section container" id="knowledge">
+        <h2>Knowledge Base</h2>
+        <div class="cards" id="knowledgeCards"></div>
+      </section>
+
+      <section class="section container" id="image-library">
+        <h2>Image Library</h2>
+        <div class="image-grid" id="imageGrid"></div>
+      </section>
+
+      <section class="section container" id="roadmap">
+        <h2>Roadmap</h2>
+        <ol class="roadmap" id="roadmapList"></ol>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>© <span id="year"></span> V Momentum · No es magia. Es sistema.</p>
+    </footer>
+
+    <dialog id="infoModal" class="modal">
+      <div class="modal-content">
+        <h3 id="modalTitle"></h3>
+        <p id="modalBody"></p>
+        <button id="closeModal" class="btn btn-primary">Cerrar</button>
+      </div>
+    </dialog>
+
+    <script src="data/integrations.js"></script>
+    <script src="data/knowledge.js"></script>
+    <script src="data/roadmap.js"></script>
+    <script src="data/manifesto.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
